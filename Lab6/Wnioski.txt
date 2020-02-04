@@ -1,0 +1,42 @@
+Marcin Sawczuk
+
+Zadanie 1
+	Zamodelowany zosta³ Oscylator Van der Pol’a i system Lorenza.
+	Na wykresie zosta³a przedstawiona przyk³adowa trajektoria fazowa równañ Lorenza oraz przyk³adowy portret fazowy Oscylatora Van der Pola.
+
+Zadanie 2
+	Dla ró¿nych wartoœci epsilon, trajektorie Oscylatora Van der Pol’a zmieniaj¹ siê.
+		- e < 0 
+			- uk³ad traci stablinoœæ - niestabilny, 
+			- nie ma cyklu, 
+			- uk³ad szybko ucieka siê w nieskoñczonoœæ
+		- e = 0
+			- trajektoria przyjmuje wygl¹d okregów zbiegaj¹cych siê do œrodka - portret "centrum",
+			- uk³ad liniowy
+		- e > 0
+			- wystêpuje cykl graniczny, wykres w wewn¹trz d¹¿y do zera, a poza nim ucieka od zera.
+
+Zadanie 3
+	Aby znaleŸæ punkty równowagi rozwi¹zujemy równanie:
+	ax - x^3 = 0
+	x(a-x^2) = 0
+	System posiada 3 punkty równowagi:
+	x_1 = 0
+	x_2 = sqrt(a)
+	x_3 = - sqrt(a)
+
+	- a < 0
+		- x_1 = 0 - asymptotycznie stabilny
+		- x_2 = sqrt(a) - niestabilny
+		- x_3 = - sqrt(a) - niestabilny
+
+	- a > 0 
+		- x_1 = 0 - niestabilny
+		- x_2 = sqrt(a) - asymptotycznie stabilny
+		- x_3 = - sqrt(a) - asymptotycznie stabilny
+
+Zadanie 4
+	Wykonano portrety fazowe systemu Lorenza dla wartoœci:
+		- sigma = 75; b = 25; r = 50; 
+		- sigma = -10; b = 200; r = 80;
+		- sigma = -1; b = 5; r = 100;

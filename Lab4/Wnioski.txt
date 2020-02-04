@@ -1,0 +1,65 @@
+Marcin Sawczuk
+
+Zadanie 1
+	Zmiana amplitudy sygna³u wejœciowego powoduje zmianê sygna³u wyjœciowego(zwiekszenie na wejœciu zwiêksza na wyjœciu).
+	Zmiana czêstotliwoœci powoduje równie¿ zmianê amplitudy, zwiêkszaj¹c j¹ do ok. 5 rad/s osi¹gamy wzrost amplitudy, kontynuuj¹c zwiêkszanie(czêstotliwoœæ > 5) wartoœci amplitudy malej¹.
+	Podczas zmiany czêstotliwoœci zmienia siê równie¿ przesuniêcie fazowe.
+
+Zadanie 2
+Uk³ad zamkniêty wówczas bêdzie asymptotycznie stabilny, jeœli uk³ad otwarty jest asymptotycznie stabilny oraz wykres charakterystyki
+amplitudowo-fazowej transformacji G(s) (Nyquist plot) nie bêdzie obejmowa³ punktu o wspó³rzêdnych (-1; 0) na p³aszczyŸnie zespolonej.
+	Uk³ad otwarty o transmitancji G(s)=1/(s^2 + s + 2):
+		Bieguny mianownika:
+			-0.5000 + 1.3229i
+  			-0.5000 - 1.3229i
+		Uk³ad otwarty jest stabilny.
+		Charakterystyka Nyquista nie obejmuje punktu (-1;0) na p³aszczyŸnie zespolonej.
+		Zatem uk³ad zamkniêty o transmitancji G(s)=1/(s^2 + s + 2) bêdzie asymptotycznie stabilny.
+	Uk³ad otwarty o transmitancji G(s)=s/(s^2 - 0.1s + 1):
+		Bieguny mianownika:
+			0.0500 + 0.9987i
+   			0.0500 - 0.9987i
+		Uk³ad otwarty jest niestabilny.
+		Kryterium, podane w kospekcie nie jest spe³nione w tym uk³adzie, gdy¿ uk³ad otwarty jest niestabilny. Dlatego korzystam z kryterium Nyquista nie graficznie interpretowanego: "Uk³ad zamkniêty jest stabilny wtedy i tylko wtedy, gdy przyrost argumentu wyra¿enia 1 + G_0(j*omega) przy zmianie omegi  w zakresie od 0 do nieskoñczonoœci jest równy k*pi, gdzie k to bieguny w prawej pó³p³aszczyŸnie.".
+		Przyrost argumentu wynosi 2pi.
+		Liczba biegunów w prawej p³aszczyŸnie wynosi 2, wiêc k=2.
+		Pierwiastki nie s¹ czysto urojone, wiêc uk³ad bêdzie asymptotycznie stabilny.
+		Zatem uk³ad zamkniêty o transmitancji G(s)=s/(s^2 - 0.1s + 1) bêdzie asymptotycznie stabilny.
+
+Zadanie 3
+	Filtr dolnoprzepustowy filtruje wysokie czêstotliwoœci(filtrowanie zaczyna siê od ok 10^-1 rad/s). Faza zmniejsza siê, im wiêksza jest czêstotliwoœæ.
+	Filtr górnoprzepustowy filtruje niskie czêstotliwoœci(filtrowanie koñczy siê ok. 10^1 rad/s). Faza zmniejsza siê, im wiêksza jest czêstotliwoœæ.
+	Filtr pasmoprzepustowy filtruje niskie oraz wysokie czêstotliwoœci. Faza zmniejsza siê, im wiêksza jest czêstotliwoœæ.
+	Filtr drugiego rzêdu przepuszcza do pewnego momentu czêstotliwoœci niskie, podbija pewien wyszczególniony przedzia³ czêstotliwoœci, po czym t³umi wy¿sze czêstotliwoœci. Faza zmniejsza siê, im wiêksza jest czêstotliwoœæ.
+
+	Filtr dolnoprzepustowy:
+		a) Ma znikomy wp³yw na sygna³ wejœciowy.
+		b) Nieco t³umi sygna³ do pewnej amplitudy, amplituda jest ni¿sza niz w sinusoidzie.
+		c) Mocno t³umi sygna³, amplituda jest zdecydowanie ni¿sza niz w sinusoidzie.
+		d) Nie t³umi sygna³u.
+		e) Dosyæ mocno t³umi, amplituda jest zdecydowanie ni¿sza niz w sinusoidzie.
+		suma - powstaj¹ oscylacje
+	Filtr górnoprzepustowy:
+		a) Wyt³umia sygna³ ca³kowicie.
+		b) T³umi sygna³ do pewnej amplitudy, jest mniej wiecej polowe nizsza niz orginalna.
+		c) Niemal¿e pokrywa siê z oryginalnym sygna³em sinusoidalnym.
+		d) Wyt³umia sygna³ ca³kowicie.
+		e) Amplituda jest widocznie ni¿sza.
+		suma - wzrost amplitudy,sinusoida nie jest g³adka
+	Filtr pasmoprzepustowy:
+		a) T³umi sygna³ ca³kowicie.
+		b) T³umi sygna³ do pewnej amplitudy.
+		c) Silne t³umienie.
+		d) Wyt³umia sygna³ ca³kowicie.
+		e) Dziêki t³umieniu bardzo wysokich i bardzo niskich czêstotliwoœci przefiltrowany sygna³ nie jest nadmiernie sp³aszczony wzglêdem pocz¹tkowego sygna³u.
+		suma - zdeformowana sinusoida 
+	Filtr drugiego rzêdu:
+		a) Znikomy wp³yw.
+		b) Lekko zmieniona amplituda.
+		c) Zdeformowana sinusoida, lecz amplituda jest zdecydowanie mniejsza.
+		d) Znikomy wp³yw.
+		e) Wzmacnia sygna³, lekko pofa³dowana amplituda.
+		suma - du¿y wzrost amplitudy
+
+Zadanie 4
+	Korzystaj¹c ze wzoru 1.17 z konspektu oraz faktu, ¿e ma nast¹piæ spadek o 20dB wnioskujemy, ¿e A(w)=1/10(A(W(gr)), a z tego wynika, ¿e f = 1/10*fgr, a wiedz¹c ¿e f=1/(2*pi*RC) wynika, ¿e dla fgr =sqrt((lenght(imie))^2 + (lenght(nazwisko))^2) RC = 0,1726 ,czyli np. R=1, a C=0,1726.

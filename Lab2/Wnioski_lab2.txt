@@ -1,0 +1,73 @@
+﻿Marcin Sawczuk
+1. J=[0,0;0,0]
+	Podwójna wartość własna równa 0, liniowy dzielnik elementarny.
+	Punkty początkowe nie zmieniają swojej wartości.
+	Wykres ogranicza się do pojedynczego punktu (0,0).
+	Zmiana wartości własnych: Brak wpłwu na portret fazowy. 
+	Zmiana wektorów własnych: Brak wpłwu na portret fazowy. 
+	Układ stabilny.
+
+2. J=[0,1;0,0]
+	Podwójna wartość własna równa 0, nieliniowy dzielnik elementarny.
+	Brak możliwości zmiany wartości własnych aby zachować typ portretu.
+	Linie wykresu to poziome linie prostopadłe do osi x2.
+	x2 > 0 dążą do większej wartości x1,
+	x2 = 0 nie zmieniają wartości,
+	x2 < 0 dążą do mniejszej wartości x1.
+	Przy zwiększaniu różnicy pomiędzy wartościami własnymi wykres rozciąga się.
+	Układ stabilny.
+
+3. J=[0,0;0,-1]
+	Pierwsza wartość własna równa 0, druga wartość własna ujemna.
+	Linie wykresu to pionowe linie równoległe do osi x2.
+	Zmiana wartości własnej(ujemnej) nie wpływa na wygląd portretu fazowego.
+	Zmiana wektorów własnych nie wpływa na wygląd portretu fazowego.
+	Układ stabilny.
+
+4. J=[-1,0;0,-2]
+	Obie wartości własne, różne od siebie, ujemne.
+	Portret fazowy składa się z symetrycznych parabol.
+	Zamiana kolejności wartości własnych skutkuje obrotem wykresu o 90°.
+	Im mniejsza różnica między wartościami własnymi, tym linie zbiegają się bliżej siebie.
+	Układ stabilny.
+
+5. J=[-1,0;0,-1]
+	Podwójna wartość własna ujemna, liniowy dzielnik elementarny.
+	Portret fazowy przyjmuje postać linii przecinających się w punkcie(0,0).
+	Zmiana wartości własnych nie wpływa na wygląd portretu fazowego
+	Układ stabilny.
+
+6. J=[-1,1;0,-1]
+	Podwójna wartość własna ujemna, nieliniowy dzielnik elementarny.
+	Portret fazowy składa się z krzywych zbiegających do punktu(0,0).
+	Jeśli część urojona będzie znacznie większa od części rzeczywistej, to trajektorię się zakręcają.
+	Jeśli część rzeczywista będzie znacznie większa od części urojonej, to trajektorie się prostują.
+	Układ stabilny.
+
+7. J=[-1,0;0,1]
+	Wartości własne o różnych znakach.
+	Portret fazowy składaja się z hiperbol.
+	Im mniejsze wartości własne, tym bardziej spłaszczony wykres.
+	Zmniejszanie λ1 przy stałym λ2 oddala wartość funkcji od asymptoty. 
+	Zwiększenie λ2 przy stalym λ1 zbliża wartość funkcji do asymptoty.
+	System niestabilny.
+
+8. J=[0,-1;1,0]
+	Wartości własne zespolone, sprzężone.
+	Portret fazowy składaja się z okręgow o środku w punkcie(0,0).
+	Brak możliwości zmiany wartości własnych aby zachować typ portretu.
+	Gdy zmniejszymy mniejszą wartość to rozszerzamy wykres.
+	Gdy zwiększymy większą wartość to wydłużamy wykres.
+	Zmiana wektorów zmienia kształt figur.
+	Układ stabilny.
+
+9. J=[-1,-1;1,-1]
+	Wartości własne zespolone, sprzężone, rzeczywista część ujemna.
+	Portret fazowy o kształcie spirali.
+	Zmniejszenie wartości własnych skutkuje zmniejszeniem skręcenia portretu.
+	Zmniejszenie części urojonej zwiększa skręcenie portretu.
+
+WPC określa punkt początkowy funkcji. 
+Portrety fazowe wyrysowane z użyciem WPC obliczonego: WPC(1) = sin(x), WPC(2) = cos(x), ograniczone są przez okrąg jednostkowy.
+Portrety fazowe wyrysowane z użyciem wzoru WPC(1) =cos(x)/ρ(x), WPC(2) =sin(x)/ρ(x) gdzie ρ(x) = max(|sin(x)|, | cos(x)|) są ograniczone przez kwadrat o boku 1.
+Zwiększenie WPC w sposob: WPC=[sin(j);cos(j)]; WPC=2*WPC; spowoduje zdwukrotnienie promienia okręgu oraz analogicznie dla kwadratu. 

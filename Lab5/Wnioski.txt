@@ -1,0 +1,37 @@
+Marcin Sawczuk
+Zadanie 1
+	Przyk³ad 1
+	System dany równaniem x'(t) = -x(t) + epsilon * x(t)^2 posiada 2 punkty równowagi 0 i 1/epsilon. 
+	Analizuj¹c wykres mo¿na zauwa¿yæ, ¿e zerowy punkt równowagi z przyk³adu 1 jest asymptotycznie stabilny.
+	Punkt 1/epsilon, przyjmuj¹c przyk³adowo epsilon  = 0.5, punkt równowagi równa siê 2, nie jest stabilny. 
+
+	Przyk³ad 2
+	System dany równaniem x'(t) = [-x1(t);-x2^2(t)]. 
+	System ten posiada jeden punkt równowagi [0;0].
+	Punkt jest lokalnie asymptotycznie stabilny.
+
+	Przyk³ad 3
+	System dany równaniem x'(t) = [x2(t);-2x1(t)-3x1^2(t)-x2(t)]. 
+	Punkty równowagi systemu:
+		- [0;0] - lokalnie asymptotycznie stabilny,
+		- [-2/3;0] - niestabilny
+
+Zadanie 2
+	Dla epsilon równe 0 punkt równowagi 0 jest asymprotycznie stabilny.
+	Wraz ze wzrostem wartosci epsilon pojawia sie drugi punkt rownowagi o wartosci x=1/epsilon. 
+	Obszar atrakcji punktu xr=0 jest wtedy ograniczony odg góry przez punkt x=1/epsilon. 
+	Wraz ze wzrostem wartosci epsilon obszar atrakcji jest coraz bardziej ograniczony, wartosc x=1/epsilon jest coraz mniejsza i zbliza sie do x=0.
+
+Zadanie 3
+	Niespe³nione za³o¿enie Tw. Grobmana Hartmana, czyli brak hiperbolicznosci powoduje, ¿e portret linearyzacji znacznie ró¿ni siê od wykresu systemu. 
+	Wykres zlinearyzowany jest sp³aszczony wzglêdem nieliniowego.
+
+Zadanie 4
+	Macierz Jakobiego J = [0 1;-2-6x_1 -1].
+	Dla zerowego punktu równowagi, J = [0 1 -2 -1].
+	Wartoœci w³asne tej macierzy to -0.5 ± 1.323i.
+	Dla punktu równowagi [-2/3; 0] macierz Jakobiego J=[0 1 2 -1]. 
+	Wartoœci w³asne tej macierzy to 1 i -2.
+
+	Zatem, te dwa punkty równowagi spe³niaj¹ za³o¿enia twierdzenia Grobmana-Hartmana(det(jwI-J(xr))!=0), wiêc trajektorie fazowe systemu nielinowego w pewnym otoczeniu punktu równowagi zachowuj¹ siê podobnie jak trajektorie uk³adu zlinearyzowanego w tym punkcie w otoczeniu zera.  
+	

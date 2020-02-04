@@ -1,0 +1,12 @@
+Marcin Sawczuk
+1. 	Wartoœæ WPC jest wartoœci¹ pocz¹tkow¹. Parametr WPC wp³ywa na szybkoœæ spadku napiêcia. Czas spadku do zera bêdzie zawsze taki sam dla okreœlonych R i C. R i C s¹ sk³adowymi sta³ej czasowej. Im wiêksze R lub C, tym wykres opada wolniej. Wartoœæ K jest odwrotnie proporcjonalna do iloczynu R i C co oznacza, ¿e wartosc K spada wraz ze wzrostem argumentow R i C. Im wiêkszy opór w uk³adzie lub pojemnoœæ kondensatora, tym napiêcie w uk³adzie spada wolniej.
+
+2.	Przy wartoœci WPC równej 0, napiêcie bêdzie d¹¿yæ do osi¹gniêcia wartoœci sygna³u podanego na sterowaniu zaczynaj¹c w chwili t równej 0 od wartoœci równej 0.
+
+3.	Dla wartoœci sterowania równej 1, przy zmieniaj¹cym siê WPC z czasem napiêcie d¹¿y do 1. Je¿eli sterowanie bêdzie mia³o sta³¹ wartoœæ, a WPC bêdzie zmienione, napiêcie z czasem bêdzie d¹¿yæ do wartoœci sterowania.
+
+4.	Napiêcie d¹¿y do wartoœci sterowania. Kiedy t nale¿y do przedzia³u [0,5] wartoœæ napiêcia roœnie d¹¿¹c do wartoœci sterowania równej 3, kiedy t>5 wartoœæ napiêcia d¹¿y do zmienionej wartoœci sterowania równej 0. Zmiana R lub C wp³ywa na szybkoœæ zmiany napiêcia d¹¿¹cego do wartoœci sterowania. Im wiêksze wartoœci R lub C, tym napiêcie d¹¿y do wartoœci sterowania wolniej, im mniejsza wartoœæ R lub C tym napiêcie d¹¿y do wartoœci sterowania szybciej.
+
+5.	Napiêcie bêdzie tak jak zawsze d¹¿yæ do wartoœci sterowania, poczynaj¹c od podanej wartoœci WPC. Jest jednak zaburzane przez oscylacjê sterowania. W pewnym momencie wartoœæ napiêcia zacznie stabilizowaæ siê w otoczeniu zera, i po osi¹gniêciu pe³nej stabilnoœci, bêdzie kontynuowa³o oscylacje w nieskoñczonoœæ. Na wielkoœæ amplitudy wp³yw maj¹ R i C. Im mniejsze R lub C amplituda drgañ siê zwiêksza, im wiêksze R lub C amplituda drgañ siê zmniejsza.
+
+6.	x_2(2)=-0.00023

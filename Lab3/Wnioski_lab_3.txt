@@ -1,0 +1,63 @@
+Marcin Sawczuk
+
+Zadanie 1
+
+Analiza zachowania systemu dyskretnego x(k+1) =  lambda*x(k) w zale¿noœci od wartoœci parametru  lambda: 
+	1. lambda < -1 (lambda = -3)
+		Wartoœæ w³asna le¿y poza ko³em jednostkowym.
+		Uk³ad jest niestabilny.
+		Uk³ad oscyluje.
+		Przy rosn¹cym k, wartoœci rozbiegaj¹ siê, naprzemian nad oœ i pod oœ odciêtych, coraz bardziej odbiegaj¹c od osi.
+	2. lambda = -1
+		Wartoœæ w³asna le¿y na brzegu ko³a jednostkowego.
+		Uk³ad stabilny, ale nie asymptotycznie stabilny.
+		Uk³ad oscyluje.
+		Wartoœci zmieniaj¹ siê na WPC i -WPC.
+	3. -1 < lambda < 0 (lambda = -0.5)
+		Wartoœæ w³asna le¿y wewn¹trz ko³a jednostkowego.
+		System asymptotycznie stabilny.
+		Uk³ad oscyluje.
+		Zmierza do 0.
+	4. lambda = 0
+		Uk³ad asymptotycznie stabilny.
+		Uk³ad zawsze jest w stanie równowagi.
+		Pierwsz¹ wartoœci¹ jest wartoœæ pocz¹tkowa, natomiast pozosta³e s¹ równe 0.
+	5. 0 < lambda < 1 ( lambda = 0.5)
+		Wartoœæ w³asna le¿y wewn¹trz ko³a jednostkowego.
+		Uk³ad asymptotycznie stabilny.
+		Pierwsza wartoœæ to wartoœæ pocz¹tkowa, nastêpne wartoœci d¹¿¹ do 0.  
+		Brak oscylacji.
+	6. lambda = 1
+		Wartoœæ w³asna le¿y na brzegu ko³a jednostkowego.
+		Uk³ad stabilny, ale nie asymptotycznie stabilny.
+		Dla ka¿dej wartoœci przyjmuje wartoœæ WPC.
+		Brak oscylacji.
+	7. lambda > 1 (lambda = 3)
+		Wartoœæ w³asna le¿y poza ko³em jednostkowym.
+		System niestabilny.
+		Zmierza do nieskoñczonoœci.  
+		Brak oscylacji.
+		
+System dyskretny jest asymptotycznie stabilny, jeœli wartoœci w³asne macierzy A le¿¹ w kole jednostkowym  (w przypadku liczb rzeczywistych -1 < lambda < 1).
+
+Zadanie 2
+
+Jak widaæ na uzyskanym wykresie, uk³ad dyskretny w chwilach ih równowa¿y siê z uk³adem ci¹g³ym - przyjmuj¹ te same wartoœci;
+
+Zadanie 3
+”W praktyce im czêœciej bank dopisuje odsetki do salda lokaty, tym lepiej dla klienta”
+
+Na wykresie widaæ, i¿ wraz ze wzrostem iloœci kapitalizacji na rok, wzrasta wartoœæ kapita³u koñcowego. Wiêc twierdzenie jest prawdziwe.
+
+Zadanie 4
+Wybieraj¹c punkt pocz¹tkowy z przedzia³ów:
+	(-inf, -3> : wynikiem w zale¿noœci od epsilon (im mniejsze tym dok³adniejsza wartoœæ) jest -3.0000.
+	<2/3,1> : wynikiem w zale¿noœci od epsilon (im mniejsze tym dok³adniejsza wartoœæ) jest 1.0000.
+	<4, +inf) : wynikiem w zale¿noœci od epsilon (im mniejsze tym dok³adniejsza wartoœæ) jest 4.0000.
+
+W pozosta³ych przypadkach w tym dla x0=-1 otrzymany wynik nie spe³nia warunków dzia³ania algorytmu, gdy¿ powinien byæ spe³niony warunek wyboru odpowieniego punktu startowego. 
+Punktem startowym obliczeñ jest ten koniec przedzia³u [a,b], w którym funkcja f(x) przyjmuje ten sam znak co jej druga pochodna, czyli zachodzi f(x0)*f''(x0)>0, gdzie x0=a lub x0=b. 
+
+
+
+
